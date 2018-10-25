@@ -18,3 +18,11 @@ h2 {
 p {
     text-align: justify;
 }
+
+.main-text {
+    text-align: justify;
+}
+
+.author-text {
+    font-size: 22px;
+}
