@@ -1,5 +1,5 @@
 /*
-Orange color: #e67e22
+	Orange color: #e67e22
 */
 
 /* ------------------------------------------------------------------- */
@@ -18,7 +18,7 @@ html {
 	font-family: 'Lato', 'Arial', sans-serif;
 	font-weight: 300;
 	font-size: 20px; /* this is the global font size */
-	text-rendering: optimizeLegibility; /* this will make the fonts render in a perfect way */
+	text-rendering: optimizeLegibility; /* this will make the fonts render in a perfect way rather that fast rendering */
 }
 
 /* ------------------------------------------------------------------- */
