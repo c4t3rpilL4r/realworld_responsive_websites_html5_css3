@@ -194,26 +194,48 @@ header {
 }
 
 /* ------------------------------------------------------------------- */
+/* FEATURES */
+/* ------------------------------------------------------------------- */
+
+.section-features .long-copy {
+	margin-bottom: 30px;
+}
+
+/* ------------------------------------------------------------------- */
 /* MEALS */
 /* ------------------------------------------------------------------- */
 
+.section-meals {
+	padding: 0;
+}
+
 .meals-showcase {
 	list-style: none;
-	width: 100%;
+	width: 100%; /* this width is for the ul to fit in the whole width of the browser */
 }
 
 .meals-showcase li {
 	display: block;
 	float: left;
-	width: 25%;
+	width: 25%; /* this width is for the li to fit in a single line in the width of the browser since there are 4 li */
 }
 
 .meal-photo {
-	width: 100%;
+	width: 100%; /* this width is for the figure element to occupy the whole width of the li */
 	margin: 0;
+	overflow: hidden;
+	background-color: #000;
 }
 
 .meal-photo img {
-	width: 100%;
+	opacity: 0.7; /* this, along with the background-color in .meal-photo will produce a dark image */
+	width: 100%; /* this width is for the img to occupy the whole width of the figure element */
 	height: auto;
+	transform: scale(1.15); /* this is to scale the img into 1.15 bigger than the original size */
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+	opacity: 1;
+	transform: scale(1.03); /* this is to scale the img back into 1.03 bigger than the original size */
 }
