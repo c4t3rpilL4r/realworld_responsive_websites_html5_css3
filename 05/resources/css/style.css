@@ -1,38 +1,85 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
-    background-color: #fff;
-    color: #555;
-    font-family: 'Lato', 'Arial', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    text-rendering: optimizeLegibility; /* this will make the fonts render in a perfect way */
+	background-color: #fff;
+	color: #555;
+	font-family: 'Lato', 'Arial', sans-serif;
+	font-weight: 300;
+	font-size: 20px; /* this is the global font size */
+	text-rendering: optimizeLegibility; /* this will make the fonts render in a perfect way */
 }
 
 .row {
-    max-width: 1140px;
-    margin: 0 auto;
+	max-width: 1140px;
+	margin: 0 auto;
 }
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg); /* this will display an image (linear-gradient) on top of the background image (url) */
-    background-size: cover; /* this will fit the image in the viewport view */
-    background-position: center;
-    height: 100vh; /* this will display the image in whole in the viewport (vh) */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg); /* this will display an image (linear-gradient) on top of the background image (url) */
+	background-size: cover; /* this will fit the image in the viewport view */
+	background-position: center;
+	height: 100vh; /* this will display the image in whole in the viewport (vh) */
 }
 
 .hero-text-box {
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* this will center the class from its absolute position (top: 50%, left: 50%) */
+	position: absolute;
+	width: 1140px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); /* this will center the class from its absolute position (top: 50%, left: 50%) */
 }
 
 h1 {
-    margin: 0; /* this is to remove the margin of h1 that is provided by normalize.css */
+	margin-top: 0;
+	margin-bottom: 20px;
+	color: #fff;
+	font-size: 240%;
+	font-weight: 300;
+	text-transform: uppercase; /* this will transform the texts into uppercases */
+	letter-spacing: 1px; /* this will increase the gap between letters */
+	word-spacing: 4px; /* this will increase the gap between words */
+}
+
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: 300;
+	text-decoration: none;
+	border-radius: 200px;
+	transition: background-color 0.2s, border 0.2s, color 0.2s; /* CSS3 - this will delay the changing of the background, border, and font colors */
+}
+
+.btn-full:link,
+.btn-full:visited {
+	background-color: #e67e22;
+	border: 1px solid #e67e22;
+	color: #fff;
+	margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+	border: 1px solid #e67e22;
+	color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+	background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+	border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+	border: 1px solid #cf6d17;
+	color: #fff;
 }
