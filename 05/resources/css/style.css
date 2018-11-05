@@ -188,6 +188,7 @@ header {
 	background-size: cover; /* this will fit the image in the viewport view */
 	background-position: center;
 	height: 100vh; /* this will display the image in whole in the viewport (vh) */
+	background-attachment: fixed; /* this will place the background image in a fixed place even when scrolling */
 }
 
 .hero-text-box {
@@ -350,4 +351,45 @@ header {
 
 .city-feature {
 	margin-bottom: 5px;
+}
+
+/* ------------------------------------------------------------------- */
+/* TESTIMONIALS */
+/* ------------------------------------------------------------------- */
+
+.section-testimonials {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+	background-size: cover;
+	color: #fff;
+	background-attachment: fixed;
+}
+
+blockquote {
+	padding: 2%; /* this will adjust the length of the text lines inside the blockquote */
+	font-style: italic;
+	line-height: 145%;
+	position: relative; /* this is needed so that the quotations marks will be seen before the blockquote */
+	margin-top: 40px;
+}
+
+blockquote::before {
+	content: "\201C";
+	font-size: 500%;
+	display: block;
+	position: absolute; /* for this to appear, the parent -- blockquote -- should be set to position: relative */
+	top: -5px;
+	left: -5px;
+}
+
+cite {
+	font-size: 90%;
+	margin-top: 25px;
+	display: block;
+}
+
+cite img {
+	height: 45px;
+	border-radius: 50%;
+	margin-right: 10px;
+	vertical-align: middle;
 }
