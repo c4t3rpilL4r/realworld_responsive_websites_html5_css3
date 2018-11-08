@@ -12,13 +12,15 @@
 	box-sizing: border-box;
 }
 
-html {
+html,
+body {
 	background-color: #fff;
 	color: #555;
 	font-family: 'Lato', 'Arial', sans-serif;
 	font-weight: 300;
 	font-size: 20px; /* this is the global font size */
 	text-rendering: optimizeLegibility; /* this will make the fonts render in a perfect way rather that fast rendering */
+	overflow-x: hidden; /* this will hide the excess content due to contents not fitting inside the element's box */
 }
 
 /* this will clear the float values */
@@ -314,7 +316,7 @@ header {
 	margin-bottom: 50px;
 }
 
-.works-step:last-of-type {
+.works-step:last-of-type { /* this refers to the number 3 -- last div type -- */
 	margin-bottom: 80px;
 }
 
