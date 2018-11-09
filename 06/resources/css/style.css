@@ -9,7 +9,8 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 html,
@@ -131,6 +132,7 @@ a:active {
 	text-decoration: none;
 	padding-bottom: 1px;
 	border-bottom: 1px solid #e67e22;
+	-webkit-transition: border-bottom 0.2s, color 0.2s;
 	transition: border-bottom 0.2s, color 0.2s;
 }
 
@@ -149,6 +151,7 @@ input[type=submit] {
 	font-weight: 300;
 	text-decoration: none;
 	border-radius: 200px;
+	-webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
 	transition: background-color 0.2s, border 0.2s, color 0.2s; /* CSS3 - this will delay the changing of the background, border, and font colors */
 }
 
@@ -191,6 +194,7 @@ input[type=submit] {
 /* ------------------------------------------------------------------- */
 
 header {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/hero.jpg);
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg); /* this will display an image (linear-gradient) on top of the background image (url) */
 	background-size: cover; /* this will fit the image in the viewport view */
 	background-position: center;
@@ -203,7 +207,8 @@ header {
 	width: 1140px;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%); /* this will center the class from its absolute position (top: 50%, left: 50%) */
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%); /* this will center the class from its absolute position (top: 50%, left: 50%) */
 }
 
 .logo {
@@ -232,6 +237,7 @@ header {
 	text-transform: uppercase;
 	font-size: 90%;
 	border-bottom: 2px solid transparent;
+	-webkit-transition: border-bottom 0.2s;
 	transition: border-bottom 0.2s;
 }
 
@@ -278,13 +284,18 @@ header {
 	opacity: 0.7; /* this, along with the background-color in .meal-photo will produce a dark image */
 	width: 100%; /* this width is for the img to occupy the whole width of the figure element */
 	height: auto;
-	transform: scale(1.15); /* this is to scale the img into 1.15 bigger than the original size */
+	-webkit-transform: scale(1.15);
+	        transform: scale(1.15); /* this is to scale the img into 1.15 bigger than the original size */
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, -webkit-transform 0.5s;
 	transition: transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .meal-photo img:hover {
 	opacity: 1;
-	transform: scale(1.03); /* this is to scale the img back into 1.03 bigger than the original size */
+	-webkit-transform: scale(1.03);
+	        transform: scale(1.03); /* this is to scale the img back into 1.03 bigger than the original size */
 }
 
 /* ------------------------------------------------------------------- */
@@ -365,6 +376,7 @@ header {
 /* ------------------------------------------------------------------- */
 
 .section-testimonials {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(img/back-customers.jpg);
 	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
 	background-size: cover;
 	color: #fff;
@@ -414,7 +426,8 @@ cite img {
 	border-radius: 5px;
 	width: 90%; /* this is to lessen the width of the span-1-of-3 box into 90% from 100% */
 	margin-left: 5%; /* this will move the content 5% right which will center the content since width has been changed to 90% */
-	box-shadow: 0 2px 2px #efefef;
+	-webkit-box-shadow: 0 2px 2px #efefef;
+	        box-shadow: 0 2px 2px #efefef;
 }
 
 .plan-box div {
@@ -475,6 +488,13 @@ textarea {
 	border-radius: 3px;
 	border: 1px solid #ccc;
 	font-weight: 300;
+	background-color: #fff;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+	background-color: #fff;
 }
 
 textarea {
@@ -525,6 +545,7 @@ footer {
 	text-decoration: none;
 	border: 0;
 	color: #888;
+	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
 }
 
@@ -542,6 +563,7 @@ footer {
 .ion-social-googleplus,
 .ion-social-twitter,
 .ion-social-instagram {
+	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
 }
 
