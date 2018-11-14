@@ -76,6 +76,11 @@ h2 {
 	letter-spacing: 1px;
 }
 
+h3 {
+	font-size: 110%;
+	margin-bottom: 15px;
+}
+
 h2:after {
 	display: block;
 	height: 2px;
@@ -84,11 +89,6 @@ h2:after {
 	width: 100px;
 	margin: 0 auto;
 	margin-top: 30px;
-}
-
-h3 {
-	font-size: 110%;
-	margin-bottom: 15px;
 }
 
 /* ----------- PARAGRAPHS ----------- */
@@ -253,6 +253,19 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
 	border-bottom: 2px solid #e67e22;
+}
+
+/* Mobile navi */
+.mobile-nav-icon {
+	float: right;
+	margin-top: 30px;
+	cursor: pointer; /* this will display the cursor that is intended for <a> tags when hovered over */
+	display: none;
+}
+
+.mobile-nav-icon i {
+	font-size: 200%;
+	color: #fff;
 }
 
 /* Sticky navi */
