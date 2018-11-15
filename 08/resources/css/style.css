@@ -194,8 +194,8 @@ input[type=submit] {
 /* ------------------------------------------------------------------- */
 
 header {
-	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/hero.jpg);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg); /* this will display an image (linear-gradient) on top of the background image (url) */
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/hero-min.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-min.jpg); /* this will display an image (linear-gradient) on top of the background image (url) */
 	background-size: cover; /* this will fit the image in the viewport view */
 	background-position: center;
 	height: 100vh; /* this will display the image in whole in the viewport (vh) */
@@ -428,8 +428,8 @@ header {
 /* ------------------------------------------------------------------- */
 
 .section-testimonials {
-	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(img/back-customers.jpg);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(img/back-customers-min.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers-min.jpg);
 	background-size: cover;
 	color: #fff;
 	background-attachment: fixed;
